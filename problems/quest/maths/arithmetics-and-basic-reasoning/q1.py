@@ -1,3 +1,4 @@
+import random
 from collections import namedtuple
 from typing import List
 
@@ -20,10 +21,7 @@ from typing import List
 # Input     arr = [1,2,4]
 # Output    false
 
-ExampleData = namedtuple("Example", ["input", "output"])
-
-example1 = ExampleData(input = [3,5,1], output = True)
-example2 = ExampleData(input = [1,2,4], output = False)
+ExampleData = namedtuple("ExampleData", ["input", "output"])
 
 def canMakeArithmeticProgression(arr: List[int]) -> bool:
     arr.sort()
@@ -32,9 +30,12 @@ def canMakeArithmeticProgression(arr: List[int]) -> bool:
     return output
 
 if __name__ == '__main__':
-    result1 = canMakeArithmeticProgression(example1.input)
-    print(result1 == example1.output)
+    # example1 = canMakeArithmeticProgression([3,5,1]) == True
+    # example2 = canMakeArithmeticProgression([1,2,4]) == False
+    results = [ExampleData(input=arr, output=canMakeArithmeticProgression(arr)) for arr in [
+            [random.randint(-10**6, 10**6) for _ in range(random.randint(2, 1000))] for _ in range(100_000)
+        ]
+    ]
 
-    result2 = canMakeArithmeticProgression(example2.input)
-    print(result2 == example2.output)
+    print("\n".join(map(str, results)))
 

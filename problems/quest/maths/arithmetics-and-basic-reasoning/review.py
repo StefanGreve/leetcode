@@ -42,6 +42,9 @@ def reverse(x: int) -> int:
     return rev
 
 if __name__ == '__main__':
+    # example1 = reverse(123) == 321
+    # example2 = reverse(-123) == -321
+    # example3 = reverse(120) == 21
     results = [
         ExampleData(input=x, output=reverse(x)) for x in (
             random.randint(-2**31, 2**31) for _ in range(100_000)
