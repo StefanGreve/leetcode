@@ -10,9 +10,14 @@ from collections import namedtuple
 # -2^{31} <= x <= 2^{31}-1
 #
 # EXAMPLE
-# x=121 is a palindrome, because 121 reads as 121 from left to right and from right to left.
-# x=-121 is not a palindrome, because from left to right, it reads -121, and From right to left, it becomes 121-.
-# x=10 is not a palindrome, because it reads 01 from right to left.
+# Input     x = 121
+# Output    true
+#
+# Input     x = -121
+# Output    false
+#
+# Input     x = 10
+# Output    false
 
 ExampleData = namedtuple("ExampleData", ["input", "output"])
 

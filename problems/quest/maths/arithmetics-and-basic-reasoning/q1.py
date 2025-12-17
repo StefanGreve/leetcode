@@ -12,6 +12,13 @@ from typing import List
 # CONSTRAINTS
 # 2 <= arr.length <= 1000
 # -10^6 <= arr[i] <= 10^6
+#
+# EXAMPLE
+# Input     arr = [3,5,1]
+# Output    True
+#
+# Input     arr = [1,2,4]
+# Output    false
 
 ExampleData = namedtuple("Example", ["input", "output"])
 

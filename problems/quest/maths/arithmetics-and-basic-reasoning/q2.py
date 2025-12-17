@@ -12,8 +12,14 @@ from collections import namedtuple
 # 1 <= n <= 1000
 #
 # EXAMPLE
-# For instance, with numbers [1, 2, 3, 4, 5, 6, 7, 8], the pivot integer is 6
-# because 1+2+3+4+5+6 = 6+7+8 = 21.
+# Input     n = 8
+# Output    6
+#
+# Input     n = 1
+# Output    1
+#
+# Input     n = 4
+# Output    -1
 
 ExampleData = namedtuple("ExampleData", ["input", "output"])
 
