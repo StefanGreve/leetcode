@@ -23,7 +23,7 @@ from collections import namedtuple
 # Input     x = 120
 # Output    21
 
-ExampleData = namedtuple("Example", ["input", "output"])
+ExampleData = namedtuple("ExampleData", ["input", "output"])
 
 def reverse(x: int) -> int:
     rev = 0
