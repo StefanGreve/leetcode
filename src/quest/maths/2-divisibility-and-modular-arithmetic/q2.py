@@ -3,6 +3,7 @@ import math
 from collections import namedtuple
 
 # PROBLEM STATEMENT
+# https://leetcode.com/problems/smallest-integer-divisible-by-k/?envType=problem-list-v2&envId=maths-m2-divisibility-modular-arithmetic
 # Given a positive integer k, you need to find the length of the smallest positive
 # integer n such that n is divisible by k, and n only contains the digit 1.
 #
