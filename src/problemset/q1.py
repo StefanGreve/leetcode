@@ -28,6 +28,8 @@ from typing import List
 # Input     nums = [3, 3]
 # Output    [0, 1]
 
+ExampleData = namedtuple("ExampleData", ["nums", "target", "output"])
+
 # Time Complexity: O(n^2), Space Complexity: O(1)
 def twoSum(nums: List[int], target: int) -> List[int]:
     for i, n in enumerate(nums):
@@ -54,5 +56,5 @@ if __name__ == '__main__':
         ) for _ in range(100)
     ]
 
-    print("\n".join(f"nums={nums}, target={target} -> output={twoSum(nums, target)}" for nums, target in inputs)
+    print("\n".join(str(ExampleData(nums, target, twoSum(nums, target))) for nums, target in inputs)
 )
