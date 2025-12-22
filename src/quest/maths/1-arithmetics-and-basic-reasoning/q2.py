@@ -47,9 +47,12 @@ def pivotInteger(n: int) -> int:
     return int(x) if x.is_integer() else -1
 
 if __name__ == '__main__':
-    # example1 = pivotInteger(8) == 6
-    # example2 = pivotInteger(1) == 1
-    # example3 = pivotInteger(4) == -1
+    # examples
+    assert pivotInteger(8) == 6
+    assert pivotInteger(1) == 1
+    assert pivotInteger(4) == -1
+
+    # test cases
     results = (ExampleData(input = n, output = pivotInteger(n)) for n in range(1, 1001))
     print("\n".join(map(str, results)))
 

@@ -81,9 +81,12 @@ def smallestRepunitDivByK(k: int) -> int:
     return i
 
 if __name__ == '__main__':
-    # example1 = smallestRepunitDivByK(1) == 1
-    # example2 = smallestRepunitDivByK(2) == -1
-    # example3 = smallestRepunitDivByK(3) == 3
+    # examples
+    assert smallestRepunitDivByK(1) == 1
+    assert smallestRepunitDivByK(2) == -1
+    assert smallestRepunitDivByK(3) == 3
+
+    # test cases
     inputs = [random.randint(0, 10**5 + 1) for _ in range(100_000)]
     results = [ExampleData(input=k, output=smallestRepunitDivByK(k)) for k in inputs]
 

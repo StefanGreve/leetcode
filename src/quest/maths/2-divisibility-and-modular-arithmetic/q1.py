@@ -63,9 +63,12 @@ def isUgly(n: int) -> bool:
     return all(x in allowed_prime_factors for x in prime_factors)
 
 if __name__ == '__main__':
-    # example1 = isUgly(6) == True
-    # example2 = isUgly(1) == True
-    # example3 = isUgly(14) == False
+    # examples
+    assert isUgly(6) == True
+    assert isUgly(1) == True
+    assert isUgly(14) == False
+
+    # test cases
     results = [
         ExampleData(input=random.randint(-2**31, 2**31), output=isUgly(x))
             for x in range(100_000)

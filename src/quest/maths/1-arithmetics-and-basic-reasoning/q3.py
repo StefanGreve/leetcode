@@ -41,9 +41,12 @@ def isPalindrome(x: int) -> bool:
     return rev == x
 
 if __name__ == '__main__':
-    # example1 = isPalindrome(121) == True
-    # example2 = isPalindrome(-121) == False
-    # example3 = isPalindrome(10) == False
+    # examples
+    assert isPalindrome(121) == True
+    assert isPalindrome(-121) == False
+    assert isPalindrome(10) == False
+
+    # test cases
     results = [
         ExampleData(input=x, output=isPalindrome(x)) for x in (
             random.randint(-2**31, 2**31) for _ in range(100_000)

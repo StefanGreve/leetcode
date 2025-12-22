@@ -30,8 +30,11 @@ def canMakeArithmeticProgression(arr: List[int]) -> bool:
     return output
 
 if __name__ == '__main__':
-    # example1 = canMakeArithmeticProgression([3,5,1]) == True
-    # example2 = canMakeArithmeticProgression([1,2,4]) == False
+    # examples
+    assert canMakeArithmeticProgression([3,5,1]) == True
+    assert canMakeArithmeticProgression([1,2,4]) == False
+
+    # test cases
     results = [ExampleData(input=arr, output=canMakeArithmeticProgression(arr)) for arr in [
             [random.randint(-10**6, 10**6) for _ in range(random.randint(2, 1000))] for _ in range(100_000)
         ]
