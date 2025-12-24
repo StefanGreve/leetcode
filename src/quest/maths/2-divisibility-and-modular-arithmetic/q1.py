@@ -13,7 +13,7 @@ from typing import List
 # CONSTRAINTS
 # -2^{31} <= x <= 2^{31}-1
 #
-# EXAMPLE
+# EXAMPLES
 # Input     x = 6
 # Output    True
 #

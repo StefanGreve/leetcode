@@ -15,7 +15,7 @@ from collections import namedtuple
 # CONSTRAINTS
 # 1 <= k <= 10^5
 #
-# EXAMPLE
+# EXAMPLES
 # Input     k = 1
 # Output    1
 #

@@ -14,7 +14,7 @@ from typing import List
 # 2 <= arr.length <= 1000
 # -10^6 <= arr[i] <= 10^6
 #
-# EXAMPLE
+# EXAMPLES
 # Input     arr = [3,5,1]
 # Output    True
 #

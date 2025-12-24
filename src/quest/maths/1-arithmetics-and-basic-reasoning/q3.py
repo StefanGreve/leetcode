@@ -9,7 +9,7 @@ from collections import namedtuple
 # CONSTRAINTS
 # -2^{31} <= x <= 2^{31}-1
 #
-# EXAMPLE
+# EXAMPLES
 # Input     x = 121
 # Output    true
 #

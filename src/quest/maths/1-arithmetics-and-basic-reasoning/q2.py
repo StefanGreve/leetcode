@@ -11,7 +11,7 @@ from collections import namedtuple
 # CONSTRAINTS
 # 1 <= n <= 1000
 #
-# EXAMPLE
+# EXAMPLES
 # Input     n = 8
 # Output    6
 #
